@@ -46,12 +46,12 @@
 <body>
     
 <div class="alert alert-info" role="alert">
-    <p style="position: relative;">Simple UI with Machine Learning Integration.
+    <p class="text-center">Simple UI with Machine Learning Integration.</p>
 </div>
 
 <div class="form">
     <h2 class="heading"> Diabetes Prediction! </h2><br>
-    <form class="form_main" method="post">
+    <form action="{{ url_for('predict')}}" method="post">
         <input type="text" name="pregnancies" placeholder="Number of Pregnencies: Eg: 0,1.."><br><br>
         <input type="text" name="glucose" placeholder="Glucose (mg/dL): Eg: 95"><br><br>
         <input class="form-input" name="bloodpressure" placeholder="Blood Pressure (mmHg) Eg: 120"><br><br>
@@ -70,12 +70,9 @@
 <div class="image_facts">
 <figure class="figure">
     <img src="https://storage.googleapis.com/macrovector-acl-eu/previews/43964/preview_43964.jpg" class="figure-img img-fluid rounded" alt="...">
-    <figcaption class="figure-caption">Try this out, Good Accuracy!</figcaption>
+    <p class="text-center" style="color: red; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" >Get your predictions today ♥</p>    
 </figure>
 <div>
-
-
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
