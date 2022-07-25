@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction!</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+<style>
+
+    html{
+        background-color: bisque;
+    }
+
+    .form{ 
+        font-family: 'Sofia', cursive;
+        align-content: center;
+        align-items: center;
+        color: blueviolet;
+	    position: absolute;
+	    top: 40%;
+	    left: 50%;
+	    margin: -200px ;
+	    width:400px;
+	    height:100%;
+}
+
+    input{
+        width: 100%;
+        align-items: center;
+}
+
+    .image_facts{
+        float: left;
+}
+</style>
+
+</head>
+<body>
+    
+<div class="alert alert-info" role="alert">
+    <p style="position: relative;">Simple UI with Machine Learning Integration.
+</div>
+
+<div class="form">
+    <h2 class="heading"> Diabetes Prediction! </h2><br>
+    <form class="form_main" method="post">
+        <input type="text" name="pregnancies" placeholder="Number of Pregnencies: Eg: 0,1.."><br><br>
+        <input type="text" name="glucose" placeholder="Glucose (mg/dL): Eg: 95"><br><br>
+        <input class="form-input" name="bloodpressure" placeholder="Blood Pressure (mmHg) Eg: 120"><br><br>
+        <input class="form-input" name="skinthickness" placeholder="Skin Thickness (mm) Eg: 14"><br><br>
+        <input class="form-input" name="insulin" placeholder="Insulin Level (IU/mL) Eg: 75"><br><br>
+        <input class="form-input" name="bmi" placeholder="Body Mass Index (kg/m²) Eg: 24.1"><br><br>
+        <input class="form-input" name="dpf" placeholder="Diabetes Pedigree Function Eg: 0.52"><br><br>
+        <input class="form-input" name="age" placeholder="Age (years) Eg: 34"><br><br>
+        
+<button type="button" class="btn btn-primary btn-lg">Predict!</button><br><br>
+    </form>
+    <br>
+    <br>
+    {{ prediction_text }}
+
+<div class="image_facts">
+<figure class="figure">
+    <img src="https://storage.googleapis.com/macrovector-acl-eu/previews/43964/preview_43964.jpg" class="figure-img img-fluid rounded" alt="...">
+    <figcaption class="figure-caption">Try this out, Good Accuracy!</figcaption>
+</figure>
+<div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
