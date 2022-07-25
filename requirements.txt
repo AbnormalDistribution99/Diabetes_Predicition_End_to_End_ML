@@ -1,6 +1,5 @@
 appdirs==1.4.4
 numpy==1.19.5
-Pillow==8.4.0
 Flask-Cors==3.0.10
 Flask==1.1.1
 MarkupSafe==1.1.1
