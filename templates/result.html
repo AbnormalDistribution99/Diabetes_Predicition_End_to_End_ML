@@ -19,17 +19,27 @@
         background-color: bisque;
         overflow: hidden;
     }
+
+    .outcome{
+        font-family: 'Sofia', cursive;
+        font-size: xx-large;
+        color: blueviolet;
+        align-items: center;
+    }
 </style>
 </head>
 
 <body>
+    <div class="alert alert-info" role="alert">
+        <p class="text-center">Simple UI with Machine Learning Integration.</p>
+    </div>
     <div class="outcome">
         {% if prediction==1 %}
-            <h1>Prediction: <span class='risk'>Opps! You have DIABETES.</span></h1>
-            <img class="result-image" src="{{ url_for('static', filename='diabetes.webp') }}" alt="Diabetes Image">
+            <h1>Prediction!<br> <span class='risk'>Looks like you have diabetes. Please consult a doctor.</span></h1>
+            <img class="result-image" src="{{ url_for('static', filename='diabetes.webp') }}" alt="Sad Image">
         {% elif prediction==0 %}
-            <h1>Prediction: <span class='norisk'>Wow ! You DON'T have diabetes.</span></h1>
-            <img class="result-image1" src="{{ url_for('static', filename='no-diabetes.webp') }}" alt="Not Diabetes Image">
+            <h1>Prediction: <span class='norisk'>Congratulations! You don't have Diabetes</span></h1>
+            <img class="result-image1" src="{{ url_for('static', filename='no-diabetes.webp') }}" alt="Happy Image">
         {% endif %}
     </div>
 

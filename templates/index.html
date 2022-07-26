@@ -15,31 +15,37 @@
 
 <style>
 
-    html{
-        background-color: bisque;
-    }
-
-    .form{ 
-        font-family: 'Sofia', cursive;
-        align-content: center;
-        align-items: center;
-        color: blueviolet;
-	    position: absolute;
-	    top: 40%;
-	    left: 50%;
-	    margin: -200px ;
-	    width:400px;
-	    height:100%;
+html{
+    background-color: bisque;
 }
 
-    input{
-        width: 100%;
-        align-items: center;
+.form{ 
+    font-family: 'Sofia', cursive;
+    align-content: center;
+    align-items: center;
+    color: blueviolet;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin: -200px ;
+	width:400px;
+	height:100%;
 }
 
-    .image_facts{
-        float: left;
+input{
+    width: 100%;
+    align-items: center;
+
 }
+
+::placeholder{
+    text-align: center;
+}
+
+.image_facts{
+    float: left;
+}
+
 </style>
 
 </head>
@@ -61,7 +67,7 @@
         <input class="form-input" name="dpf" placeholder="Diabetes Pedigree Function Eg: 0.52"><br><br>
         <input class="form-input" name="age" placeholder="Age (years) Eg: 34"><br><br>
         
-<button type="button" class="btn btn-primary btn-lg">Predict!</button><br><br>
+<button type="submit" class="btn btn-primary btn-lg">Predict!</button><br><br>
     </form>
     <br>
     <br>
