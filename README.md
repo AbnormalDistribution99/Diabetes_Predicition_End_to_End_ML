@@ -1,4 +1,4 @@
-# Diabetes_Predicition_End_to_End_ML
+# Diabetes Predicition
 Simple UI with Machine Learning Integration to predict Diabetes.
 Used Random Forest Algorithm.
 
